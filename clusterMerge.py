@@ -31,6 +31,6 @@ print("There are {} nodes in the graph".format(P.number_of_nodes()))
 print("There are {} edges in the graph".format(P.number_of_edges()))
 
 #Extract the gene IDs from the cluster as gene names in the gene list
-list(P.nodes)
+print(list(P.nodes))
 
 
