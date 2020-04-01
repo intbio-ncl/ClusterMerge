@@ -24,9 +24,13 @@ import networkx as nx
 #Main
 
 #Read in a cluster exported from cytoscape as a graphml file to produce Graph P
-P = nx.read_graphml("cluster.graphml")
+print("reading Graph")
+P = nx.Graph()
+P = nx.read_graphml('./cluster.graphml')
+P.number_of_nodes()
+P.number_of_edges()
 
 #Extract the gene IDs from the cluster as gene names in the gene list
-list (P.nodes)
+list(P.nodes)
 
 
