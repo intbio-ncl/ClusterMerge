@@ -125,6 +125,10 @@ def get_repodb_subgraph_given_genes(gene_ids):
 #Main
 
 if __name__ == "__main__":
+	protein_list_file = "gene_list.txt"
+	with open(protein_list_file, "r") as f:
+		prey_list = {f"uniprot.{i.strip()}" for i in f}
+
 	#Read in a cluster exported from cytoscape as a graphml file to produce Graph P
 	print("reading Graph")
 	P = nx.Graph()
@@ -156,6 +160,7 @@ if __name__ == "__main__":
 	labels = {}
 	graphics = {}
 
+
 	# This is changing labels. Some nodes don't have a "type", because they aren't in RepoDB.
 	for node, data in R.nodes(data=True):
 		if not "type" in data:
@@ -163,7 +168,10 @@ if __name__ == "__main__":
 			continue
 		# If the node is a protein, change the label to the UniProt ID.
 		if data['type'] == "Protein":
-			graphics[node] = {"fill" : "#00FF00"}
+			if node in prey_list:
+				graphics[node] = {"fill" : "#D11D53"}
+			else:
+				graphics[node] = {"fill" : "#00FF00"}
 			labels[node] = node.split(".")[1]
 		# If the node is a Gene and it has a symbol, use the symbol.
 		elif data['type'] == "Gene":
@@ -175,7 +183,7 @@ if __name__ == "__main__":
 			graphics[node] = {"fill" : "#FF7F00"}
 
 		elif data['type'] in ["BiotechDrug", "SmallMoleculeDrug"]:
-			graphics[node] = {"fill" : "#00008B"}
+			graphics[node] = {"fill" : "#34A4EB"}
 
 
 	# Set the labels.

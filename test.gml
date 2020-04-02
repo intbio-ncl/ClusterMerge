@@ -233,7 +233,7 @@ graph [
     categories "Adjuvants, Immunologic, Carbohydrates, Cicatrizants, Compounds used in a research, industrial, or household setting, Dermatologicals, Glycosaminoglycans, Immunologic Factors, Lubricants, Musculo-Skeletal System, Nasal Preparations, Ophthalmologicals, Polysaccharides, Preparations for Treatment of Wounds and Ulcers, Protective Agents, Sensory Organs, Surgical Aids, Viscoelastic Substances, Viscosupplements"
     indication "Used to treat knee pain in patients with joint inflammation (osteoarthritis). It is usually used in patients who have not responded to other treatments such as acetaminophen, exercise, or physical therapy. Hyaluronic acid may also be used in plastic surgery to reduce wrinkles on the face or as a filler in other parts of the body. May be used in ophthalmology to assist in the extraction of cataracts, the implantation of intraocular lenses, corneal transplants, glaucoma filtration, retinal attachment and in the treatment of dry eyes. Finally, hyaluronic acid is also used to coat the bladder lining in treating interstitial cystitis."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -256,7 +256,7 @@ graph [
     categories "Amidines, Analgesics, Analgesics, Non-Narcotic, Anti-Inflammatory Agents, Anticoagulants, Antirheumatic Agents, Central Nervous System Agents, Complement Inactivating Agents, Enzyme Inhibitors, Fibrinolysin, antagonists &#38; inhibitors, Hematologic Agents, Immunologic Factors, Kallikreins, antagonists &#38; inhibitors, OCT1 substrates, OCT2 Substrates, OCT2 substrates with narrow therapeutic index, Peripheral Nervous System Agents, Protease Inhibitors, Sensory System Agents, Serine Proteinase Inhibitors, Trypsin Inhibitors"
     indication "Used as an anticoagulant in patients with disseminative blood vessel coagulation, hemorrhagic lesions, and hemorrhagic tendencies. It prevents blood clot formation during extracorporeal circulation in patients undergoing continuous renal replacement therapy and extra corporeal membrane oxygenation."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -275,7 +275,7 @@ graph [
     type "BiotechDrug"
     casNumber "189261-10-7"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -568,7 +568,7 @@ graph [
     categories "Blood and Blood Forming Organs, Blood Substitutes and Perfusion Solutions, Carbamide products, Dermatologicals, Diuretics, Osmotic, Emollients and Protectives, i.v. Solutions, Keratolytic Agents, Solutions Producing Osmotic Diuresis"
     indication "<ul>&#13;&#10;<li>10% hydrate skin</li>&#13;&#10;<li>15% accelerate fibrin degradation</li>&#13;&#10;<li>20-30% are antipruritic, break down keratin, decrease the thickness of the stratum corneum and are used in scaling conditions such as ichthysosis</li>&#13;&#10;<li>40% are proteolytic and may be used to dissolve and peel dystrophic nails</li>&#13;&#10;</ul>&#13;&#10;<br>[Patient Self Care, 2010]</br>"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1168,7 +1168,7 @@ graph [
     geneName "RBX1"
     type "Protein"
     graphics [
-      fill "#00FF00"
+      fill "#D11D53"
     ]
     name "P62877"
   ]
@@ -1277,7 +1277,7 @@ graph [
     categories "BCRP/ABCG2 Inhibitors, Blood and Blood Forming Organs, Cytochrome P-450 CYP3A Inhibitors, Cytochrome P-450 CYP3A Substrates, Cytochrome P-450 CYP3A4 Inhibitors, Cytochrome P-450 CYP3A4 Inhibitors (strength unknown), Cytochrome P-450 CYP3A4 Substrates, Cytochrome P-450 CYP3A4 Substrates (strength unknown), Cytochrome P-450 Enzyme Inhibitors, Hemostatics, Phosphodiesterase 5 Inhibitors, Tyrosine Kinase Inhibitors, UGT1A1 Inhibitors, UGT1A9 Substrates, Vasodilating Agents"
     indication "Fostamatinib is indicated for use in the treatment of chronic immune thrombocytopenia (ITP) in patients who have had insufficient response to previous therapy [FDA Label]."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1295,7 +1295,7 @@ graph [
     groups "experimental"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1670,7 +1670,7 @@ graph [
     categories "Acids, Acids, Noncarboxylic, Agents for Treatment of Hemorrhoids and Anal Fissures for Topical Use, Anions, Basic Ointments and Protectants, Biomedical and Dental Materials, Blood and Blood Forming Organs, Blood Substitutes and Perfusion Solutions, Chlorine Compounds, Compounds used in a research, industrial, or household setting, Copper Absorption Inhibitor, Cosmetics, Dental Agents, EENT Drugs, Miscellaneous, Electrolyte Solutions, Electrolytes, Household Products, Hydrochloric Acid, I.V. Solution Additives, Ions, Metal cations, Metal divalent cations, Mouthwashes, Skin Ulcer, drug therapy, Vasoprotectives, Zinc Compounds"
     indication "Zinc can be used for the treatment and prevention of zinc deficiency/its consequences, including stunted growth and acute diarrhea in children, and slowed wound healing. It is also utilized for boosting the immune system, treating the common cold and recurrent ear infections, as well as preventing lower respiratory tract infections [L2172]."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1692,7 +1692,7 @@ graph [
     categories "Acetates, Acetic Acid, Acids, Acyclic, Agents for Treatment of Hemorrhoids and Anal Fissures for Topical Use, Alimentary Tract and Metabolism, Copper Absorption Inhibitor, Fatty Acids, Fatty Acids, Volatile, Lipids, Metal cations, Metal divalent cations, Various Alimentary Tract and Metabolism Products, Vasoprotectives, Zinc Compounds"
     indication "Zinc can be used for the treatment and prevention of zinc deficiency/its consequences, including stunted growth and acute diarrhea in children, and slowed wound healing. It is also utilized for boosting the immune system, treating the common cold and recurrent ear infections, as well as preventing lower respiratory tract infections [L2172]."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1715,7 +1715,7 @@ graph [
     categories "Agents for Treatment of Hemorrhoids and Anal Fissures for Topical Use, Copper Absorption Inhibitor, Diet, Food, and Nutrition, Elements, Food, Food and Beverages, Growth Substances, Laxatives, Metal cations, Metal divalent cations, Metals, Metals, Heavy, Micronutrients, Minerals, Osmotic Laxative, Physiological Phenomena, Replacement Preparations, Trace Elements, Transition Elements, Vasoprotectives, Zinc Compounds"
     indication "Zinc can be used for the treatment and prevention of zinc deficiency/its consequences, including stunted growth and acute diarrhea in children, and slowed wound healing. It is also utilized for boosting the immune system, treating the common cold and recurrent ear infections, as well as preventing lower respiratory tract infections [L2172]."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1738,7 +1738,7 @@ graph [
     categories "Acids, Carbocyclic, Agents causing angioedema, Agents causing hyperkalemia, Agents that produce hypertension, Alimentary Tract and Metabolism, Analgesics, Analgesics, Non-Narcotic, Anti-Inflammatory Agents, Anti-Inflammatory Agents, Non-Steroidal, Anti-Inflammatory Agents, Non-Steroidal (Non-Selective), Anticoagulants, Antiinflammatory and Antirheumatic Products, Antiplatelet agents, Antipyretics, Benzene Derivatives, Blood and Blood Forming Organs, Cardiovascular Agents, Cyclooxygenase Inhibitors, Cytochrome P-450 CYP2C19 Inducers, Cytochrome P-450 CYP2C19 Inducers (unknown strength), Cytochrome P-450 CYP2C9 Substrates, Cytochrome P-450 Enzyme Inducers, Decreased Platelet Aggregation, Decreased Prostaglandin Production, Drugs that are Mainly Renally Excreted, Hematologic Agents, Hydroxybenzoates, Musculo-Skeletal System, Nephrotoxic agents, Non COX-2 selective NSAIDS, Nonsteroidal Anti-inflammatory Compounds, OAT1/SLC22A6 inhibitors, OAT3/SLC22A8 Inhibitors, P-glycoprotein/ABCB1 Inducers, P-glycoprotein/ABCB1 Substrates, Peripheral Nervous System Agents, Platelet Aggregation Inhibitors Excl. Heparin, Salicylates, Salicylic Acid and Derivatives, Sensory System Agents, Stomatological Preparations, UGT1A6 substrate"
     indication "**Pain, fever, and inflammation**&#13;&#10;&#13;&#10;Acetylsalicylic acid (ASA), in the regular tablet form (immediate-release), is indicated to relieve pain, fever, and inflammation associated with many conditions, including the flu, the common cold, neck and back pain, dysmenorrhea, headache, tooth pain, sprains, fractures, myositis, neuralgia, synovitis, arthritis, bursitis, burns, and various injuries. It is also used for symptomatic pain relief after surgical and dental procedures [FDA label]. &#13;&#10;&#13;&#10;The _extra strength_ formulation of acetylsalicylic acid is also indicated for the management migraine pain with photophobia (sensitivity to light) and phonophobia (sensitivity to sound)[FDA label].&#13;&#10;&#13;&#10;**Other indications**&#13;&#10;&#13;&#10;ASA is also indicated for various other purposes, due to its ability to inhibit platelet aggregation. These include: &#13;&#10;&#13;&#10;Reducing the risk of cardiovascular death in suspected cases of myocardial infarction (MI) [FDA label]. &#13;&#10;&#13;&#10;Reducing the risk of a first non-fatal myocardial infarction in patients, and for reducing the risk of morbidity and mortality in cases of unstable angina and in those who have had a prior myocardial infarction [FDA label].&#13;&#10;&#13;&#10;For reducing the risk of transient ischemic attacks (TIA) and to prevent atherothrombotic cerebral infarction (in conjunction with other treatments) [FDA label].&#13;&#10;&#13;&#10;For the prevention of thromboembolism after hip replacement surgery [FDA label]. &#13;&#10;&#13;&#10;For decreasing platelet to platelet adhesion following carotid endarterectomy, aiding in the prevention of transient ischemic attacks (TIA) [FDA label].&#13;&#10;&#13;&#10;Used for patients undergoing hemodialysis with a silicone rubber arteriovenous cannula inserted to prevent thrombosis at the insertion site [FDA Label]. &#13;&#10;&#13;&#10;**Important note regarding use of the extended-release formulation [F4405]**&#13;&#10;&#13;&#10;In the setting of acute myocardial infarction, or before percutaneous interventions, the extended-release form of acetylsalicylic acid should not be used. Use immediate-release formulations in scenarios requiring rapid onset of action [Label, F4405]. The extended-release form is taken to decrease the incidence of mortality and myocardial infarction (MI) for individuals diagnosed with chronic coronary artery disease (CAD), including patients with previous myocardial infarction (MI) or unstable angina or with chronic stable angina. Additionally, the extended-release form is used to decrease the risk of death and recurrent episodes of stroke in patients with a history of stroke or TIA [F4405]."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1756,7 +1756,7 @@ graph [
     groups "experimental"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1773,7 +1773,7 @@ graph [
     indication "Investigated for use/treatment in gastroesophageal reflux disease (GERD)."
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1792,7 +1792,7 @@ graph [
     categories "Organophosphorus Compounds"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -1911,7 +1911,7 @@ graph [
     geneName "EIF4E2"
     type "Protein"
     graphics [
-      fill "#00FF00"
+      fill "#D11D53"
     ]
     name "O60573"
   ]
@@ -2130,7 +2130,7 @@ graph [
     groups "experimental"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -2428,7 +2428,7 @@ graph [
     molecularFormula "C10H15N5O11P2"
     name "Guanosine-5'-Diphosphate"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -2451,7 +2451,7 @@ graph [
     categories "Copper-containing Intrauterine Device, Decreased Embryonic Implantation, Decreased Sperm Motility, Diet, Food, and Nutrition, Elements, Food, Food and Beverages, Growth Substances, Inhibit Ovum Fertilization, Metals, Metals, Heavy, Micronutrients, Minerals, Physiological Phenomena, Replacement Preparations, Trace Elements, Transition Elements"
     indication "For use in the supplementation of total parenteral nutrition and in contraception with intrauterine devices [FDA Label] [L801]."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -2474,7 +2474,7 @@ graph [
     categories "Anions, Anti-Infective Agents, Antimalarials, Antiparasitic Agents, Antiparasitic Products, Insecticides and Repellents, Antiprotozoals, Artemisia, Artemisinin and Derivatives, Plain, Cytochrome P-450 CYP2C19 Inhibitors, Cytochrome P-450 CYP2C19 Inhibitors (weak), Cytochrome P-450 CYP2D6 Inhibitors, Cytochrome P-450 CYP2D6 Inhibitors (strength unknown), Cytochrome P-450 Enzyme Inhibitors, Electrolytes, Free Radicals, Ions, Oxides, Oxygen Compounds, Peroxides, Reactive Oxygen Species, Sesquiterpenes, Terpenes, UGT1A9 Substrates, UGT2B7 substrates"
     indication "For the treatment of uncomplicated *Plasmodium falciparum* infection in adults, children, and infants aged 6 months and up weighing over 5 kg [FDA Label]. Used in combination with [DB13941]."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -2757,7 +2757,7 @@ graph [
     name "Anisomycin"
     categories "Anti-Bacterial Agents, Anti-Infective Agents, Antiparasitic Agents, Antiprotozoals, Enzyme Inhibitors, Nucleic Acid Synthesis Inhibitors, Protein Synthesis Inhibitors, Pyrrolidines"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -2775,7 +2775,7 @@ graph [
     groups "experimental"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -2922,7 +2922,7 @@ graph [
     name "Puromycin"
     categories "Acids, Carbocyclic, Adenosine, Agents that produce neuromuscular block (indirect), Aminoglycoside Antibacterials, Anti-Bacterial Agents, Anti-Infective Agents, Antimetabolites, Antineoplastic Agents, Antiparasitic Agents, Antiprotozoals, Carbohydrates, Cinnamates, Enzyme Inhibitors, Glycosides, Narrow Therapeutic Index Drugs, Nephrotoxic agents, Noxae, Nucleic Acids, Nucleotides, and Nucleosides, Nucleosides, Protein Synthesis Inhibitors, Purine Nucleosides, Purines, Ribonucleosides, Toxic Actions, Trypanocidal Agents"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -3687,7 +3687,7 @@ graph [
     categories "Antineoplastic Agents, Cyclin-Dependent Kinases, antagonists &#38; inhibitors, Enzyme Inhibitors, Protein Kinase Inhibitors"
     indication "Investigated for use/treatment in breast cancer, lung cancer, lymphoma (unspecified), multiple myeloma, leukemia (lymphoid), and cancer/tumors (unspecified)."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -3710,7 +3710,7 @@ graph [
     categories "Antineoplastic Agents, BCRP/ABCG2 Substrates, Benzopyrans, Chromones, Cyclin-Dependent Kinases, antagonists &#38; inhibitors, Enzyme Inhibitors, Growth Inhibitors, Growth Substances, Protein Kinase Inhibitors, Pyrans, UGT1A1 Substrates"
     indication "Investigated for use/treatment in esophageal cancer, leukemia (lymphoid), lung cancer, liver cancer, and lymphoma (unspecified)."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4424,7 +4424,7 @@ graph [
     name "Farnesyl diphosphate"
     categories "Organophosphates, Organophosphorus Compounds, Potential QTc-Prolonging Agents, QTc Prolonging Agents, Terpenes"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4442,7 +4442,7 @@ graph [
     groups "experimental"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4607,7 +4607,7 @@ graph [
     description "Beta-Sulfoalanine. An amino acid with a C-terminal sulfonic acid group which has been isolated from human hair oxidized with permanganate. It occurs normally in the outer part of the sheep&#38;#39;s fleece, where the wool is exposed to light and weather. [PubChem]"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4642,7 +4642,7 @@ graph [
     geneName "GIGYF2"
     type "Protein"
     graphics [
-      fill "#00FF00"
+      fill "#D11D53"
     ]
     name "Q6Y7W6"
   ]
@@ -4715,7 +4715,7 @@ graph [
     categories "Amines, Antineoplastic Agents, Antineoplastic and Immunomodulating Agents, Cytochrome P-450 CYP2D6 Inhibitors, Cytochrome P-450 CYP2D6 Inhibitors (moderate), Cytochrome P-450 CYP3A Substrates, Cytochrome P-450 CYP3A4 Substrates, Cytochrome P-450 CYP3A4 Substrates (strength unknown), Cytochrome P-450 Enzyme Inhibitors, Cytochrome P450 2D6 Inhibitors, Enzyme Inhibitors, Histone Deacetylase Inhibitors, Hydroxy Acids, Hydroxylamines, Immunosuppressive Agents, Moderate Risk QTc-Prolonging Agents, P-glycoprotein/ABCB1 Substrates, QTc Prolonging Agents"
     indication "Panobinostat is indicated in the treatment of multiple myeloma in combination with dexamethasone and bortezomib in patients who have received 2 previous treatment regimens including bortezomib and an immunomodulatory agent. This indication is approved by accelerated approval based on progression free survival as of February 23, 2015."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4738,7 +4738,7 @@ graph [
     categories "Amides, Amines, Antineoplastic Agents, Antineoplastic and Immunomodulating Agents, Cytochrome P-450 CYP1A2 Inducers, Cytochrome P-450 CYP1A2 Inducers (weak), Cytochrome P-450 CYP2C8 Inhibitors, Cytochrome P-450 CYP2C8 Inhibitors (weak), Cytochrome P-450 CYP2C9 Inhibitors, Cytochrome P-450 CYP2C9 Inhibitors (strength unknown), Cytochrome P-450 Enzyme Inducers, Cytochrome P-450 Enzyme Inhibitors, Enzyme Inhibitors, Histone Deacetylase Inhibitors, Hydroxy Acids, Hydroxylamines, Immunosuppressive Agents, Myelosuppressive Agents, P-glycoprotein/ABCB1 Substrates, Sulfones, Sulfur Compounds, UGT1A1 Substrates"
     indication "Belinostat is indicated for the treatment of patients with relapsed or refractory peripheral T-cell lymphoma (PTCL) with manageable safety profile. It is a potential alternative therapy for patients who did not experience adequate response to first-line drugs for PTCL. It can be used in patients with baseline thrombocytopenia [A19161]."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4756,7 +4756,7 @@ graph [
     groups "experimental"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4779,7 +4779,7 @@ graph [
     categories "Amino Acids, Peptides, and Proteins, Antibiotics, Antineoplastic, Antineoplastic Agents, Antineoplastic and Immunomodulating Agents, Cytochrome P-450 CYP2B6 Substrates, Cytochrome P-450 CYP3A Substrates, Cytochrome P-450 CYP3A4 Substrates, Cytochrome P-450 CYP3A4 Substrates (strength unknown), Cytochrome P-450 CYP3A5 Substrates, Highest Risk QTc-Prolonging Agents, Histone Deacetylase Inhibitors, OATP1B3 substrates, P-glycoprotein/ABCB1 Substrates, Peptides, Peptides, Cyclic, QTc Prolonging Agents"
     indication "For the treatment of cutaneous T-cell lymphoma (CTCL) or/and peripheral T-cell lymphoma (PTCL) in patients who have received at least one prior systemic therapy. These indications are based on response rate. Clinical benefit such as improvement in overall survival has not been demonstrated."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4797,7 +4797,7 @@ graph [
     groups "experimental"
     type "SmallMoleculeDrug"
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
@@ -4856,7 +4856,7 @@ graph [
     categories "Alkaloids, Antimitotic Agents, Antineoplastic Agents, Antineoplastic Agents, Phytogenic, Antineoplastic and Immunomodulating Agents, BSEP/ABCB11 Inhibitors, BSEP/ABCB11 Substrates, Cardiotoxic antineoplastic agents, Cytochrome P-450 CYP2D6 Inhibitors, Cytochrome P-450 CYP2D6 Inhibitors (weak), Cytochrome P-450 CYP3A Inducers, Cytochrome P-450 CYP3A Inhibitors, Cytochrome P-450 CYP3A Substrates, Cytochrome P-450 CYP3A4 Inducers, Cytochrome P-450 CYP3A4 Inducers (strength unknown), Cytochrome P-450 CYP3A4 Inhibitors, Cytochrome P-450 CYP3A4 Inhibitors (strength unknown), Cytochrome P-450 CYP3A4 Substrates, Cytochrome P-450 CYP3A4 Substrates (strength unknown), Cytochrome P-450 Enzyme Inducers, Cytochrome P-450 Enzyme Inhibitors, Immunosuppressive Agents, Indole Alkaloids, Indoles, Mitosis Modulators, Myelosuppressive Agents, OATP1B1/SLCO1B1 Inhibitors, P-glycoprotein/ABCB1 Inducers, P-glycoprotein/ABCB1 Inhibitors, P-glycoprotein/ABCB1 Substrates, Secologanin Tryptamine Alkaloids, Tubulin Modulators, Vinca Alkaloids"
     indication "For treatment of breast cancer, testicular cancer, lymphomas, neuroblastoma, Hodgkin's and non-Hodgkin's lymphomas, mycosis fungoides, histiocytosis, and Kaposi's sarcoma."
     graphics [
-      fill "#FFFFE0"
+      fill "#34A4EB"
     ]
   ]
   node [
