@@ -60,7 +60,7 @@ def get_repodb_subgraph_given_genes(gene_ids):
 	OPTIONAL MATCH (pro)<-[dht:DrugHasTarget]-(drug)
 	OPTIONAL MATCH (drug1)-[dsim:MoleculeSimilarityMolecule]-(drug2)
 	OPTIONAL MATCH (gene)-[gawd:GeneAssociatedWithDisorder]-(disorder)
-    RETURN gene, peg, pro, drug, disorder, dht, gawd, dsim
+    RETURN gene, peg, pro, drug, disorder, dht, gawd, dsim, drug1, drug2
     """
 	
 	print (query)
