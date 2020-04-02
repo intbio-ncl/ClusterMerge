@@ -52,6 +52,7 @@ def get_repodb_subgraph_given_genes(gene_ids):
 	print("Repodb ids ",repodb_ids) 
 	
 	#Format the query string
+	# Drugs, disorders
 	query = """
     UNWIND {repodb_ids} as i
     MATCH (gene:Gene {primaryDomainId:i})
@@ -124,11 +125,14 @@ if __name__ == "__main__":
 	for i, j, data in P.edges(data=True):
 		i_name = 'entrez.{}'.format( node_id_to_entrez[i])
 		j_name = 'entrez.{}'.format( node_id_to_entrez[j])
-		R.add_edge(i_name, j_name, **flatten(data))
-
+		data = {"".join(word.capitalize() for word in k.split(" ")):v for k,v in data.items()}
+		data.pop("Suid")
+		data.pop("Selected")
+		R.add_edge(i_name, j_name, **flatten(data), type="IsFunctionallyRelatedTo" )
 
 	# Changing labels.
 	labels = {}
+	graphics = {}
 
 	# This is changing labels. Some nodes don't have a "type", because they aren't in RepoDB.
 	for node, data in R.nodes(data=True):
@@ -137,14 +141,19 @@ if __name__ == "__main__":
 			continue
 		# If the node is a protein, change the label to the UniProt ID.
 		if data['type'] == "Protein":
+			graphics[node] = {"fill" : "#00FF00"}
 			labels[node] = node.split(".")[1]
 		# If the node is a Gene and it has a symbol, use the symbol.
 		elif data['type'] == "Gene":
+			graphics[node] = {"fill" : "#FFB6C1"}
+
 			if data.get("approvedSymbol") not in [None, "-"]:
 				labels[node] = data["approvedSymbol"]
+			
 
 	# Set the labels.
+	nx.set_node_attributes(R, graphics, name="graphics")
 	nx.set_node_attributes(R, labels, name="name")
 
 	# Save the graph
-	nx.write_graphml(R, "test.graphml")
+	nx.write_gml(R, "test.gml")
