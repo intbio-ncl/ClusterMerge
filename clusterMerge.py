@@ -30,7 +30,7 @@ def get_repodb_subgraph_given_genes(gene_ids):
 	#Format the query string
 	query = """
     UNWIND {repodb_ids} as i
-    MATCH x (gene:Gene {primaryDomainId:i})
+    MATCH x (:Gene {primaryDomainId:i})
     RETURN x
     """
 	
