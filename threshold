@@ -1,0 +1,39 @@
+[ {
+  "name" : "Default filter",
+  "transformers" : [ {
+    "id" : "org.cytoscape.CompositeFilter",
+    "parameters" : {
+      "type" : "ALL"
+    },
+    "transformers" : [ ]
+  } ]
+}, {
+  "name" : "threshold",
+  "transformers" : [ {
+    "id" : "org.cytoscape.CompositeFilter",
+    "parameters" : {
+      "type" : "ALL"
+    },
+    "transformers" : [ {
+      "id" : "org.cytoscape.ColumnFilter",
+      "parameters" : {
+        "predicate" : "IS_NOT_BETWEEN",
+        "criterion" : [ 4.336, 20.736 ],
+        "caseSensitive" : false,
+        "type" : "edges",
+        "anyMatch" : true,
+        "columnName" : "ConfidenceScore"
+      }
+    }, {
+      "id" : "org.cytoscape.ColumnFilter",
+      "parameters" : {
+        "predicate" : "IS",
+        "criterion" : "IsFunctionallyRelatedTo",
+        "caseSensitive" : false,
+        "type" : "edges",
+        "anyMatch" : true,
+        "columnName" : "type"
+      }
+    } ]
+  } ]
+} ]

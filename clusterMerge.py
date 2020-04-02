@@ -191,4 +191,4 @@ if __name__ == "__main__":
 	nx.set_node_attributes(R, labels, name="name")
 
 	# Save the graph
-	nx.write_gml(R, "test.gml")
+	nx.write_gml(R, "cluster_out.gml")
