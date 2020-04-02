@@ -30,16 +30,16 @@ def get_repodb_subgraph_given_genes(gene_ids):
 	#Format the query string
 	query = """
     UNWIND {repodb_ids} as i
-    MATCH x (:Gene {primaryDomainId:i})
-    RETURN x
+    MATCH (gene:Gene {primaryDomainId:i})
+    RETURN gene
     """
 	
 	print (query)
 	
 	#Execute the query
-	#with driver.session() as session:
-	#	for result in session.run(query, repodb_ids=repodb_ids):
-	#		print(result)
+	with driver.session() as session:
+		for result in session.run(query, repodb_ids=repodb_ids):
+			print(result)
 	
 	#How do I populate R from the query results?
 	R = nx.Graph()
