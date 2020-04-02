@@ -58,9 +58,9 @@ def get_repodb_subgraph_given_genes(gene_ids):
     MATCH (gene:Gene {primaryDomainId:i})
 	OPTIONAL MATCH (gene)<-[peg:ProteinEncodedBy]-(pro:Protein)
 	OPTIONAL MATCH (pro)<-[dht:DrugHasTarget]-(drug)
-	OPTIONAL MATCH (drug1)-[dsim:MoleculeSimilarityMolecule]-(drug2)
+	OPTIONAL MATCH (drug)-[dsim:MoleculeSimilarityMolecule]-(drug1) WHERE dsim.morganR2 > 0.5
 	OPTIONAL MATCH (gene)-[gawd:GeneAssociatedWithDisorder]-(disorder)
-    RETURN gene, peg, pro, drug, disorder, dht, gawd, dsim, drug1, drug2
+    RETURN gene, peg, pro, drug, disorder, dht, gawd, dsim, drug1
     """
 	
 	print (query)
@@ -112,10 +112,6 @@ def get_repodb_subgraph_given_genes(gene_ids):
 				drug1_id = drug1['primaryDomainId']
 				R.add_node(drug1_id, **flatten(drug1))
 				
-			drug2 = result["drug2"]
-			if drug2:
-				drug2_id = drug2['primaryDomainId']
-				R.add_node(drug2_id, **flatten(drug2))
 				
 				
 			disorder = result["disorder"]
@@ -129,7 +125,7 @@ def get_repodb_subgraph_given_genes(gene_ids):
 				
 			dsim = result["dsim"]
 			if dsim:
-				R.add_edge(drug1_id, drug2_id, **flatten(dsim))
+				R.add_edge(drug_id, drug1_id, **flatten(dsim))
 
 			dht = result["dht"]
 			if dht:
