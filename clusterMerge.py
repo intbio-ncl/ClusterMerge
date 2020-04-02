@@ -31,18 +31,45 @@ def get_repodb_subgraph_given_genes(gene_ids):
 	query = """
     UNWIND {repodb_ids} as i
     MATCH (gene:Gene {primaryDomainId:i})
-    RETURN gene
+	MATCH (gene)<-[peg:ProteinEncodedByGene]-(pro)
+    RETURN gene, peg, pro
     """
 	
 	print (query)
 	
+	R = nx.Graph()
+	
 	#Execute the query
 	with driver.session() as session:
 		for result in session.run(query, repodb_ids=repodb_ids):
-			print(result)
-	
+			# Imagine result as a hash map. The keys are the variables you had
+			# in the return clase of the query.
+			gene = result["gene"]  
+			# Imagine gene is now a hash map of the node / edge requested, with
+			# key:value pairs being attribute_name : attribute_value.
+
+			# The primaryDomainId is most ideal for the node label (we can swap 
+			# this out after).
+			gene_id = gene["primaryDomainId"]
+
+			# Add node to graph R. **gene is some syntactic sugar. Basically, 
+			# add_node takes a label as 0th positional argument, then keyword
+			# arguments for the remaining attributes. **gene takes a hash map
+			# (e.g., {"geneType": "protein-coding", "displayName": "TMPRSS2"}),
+			# and expands it as keyword arguments for the function (i.e.,
+			# (geneType = "protein-coding", displayName = "TMPRSS2"))
+		
+			R.add_node(gene_id, **gene)
+
+			pro = result["pro"]
+			pro_id = pro['primaryDomainId']
+			R.add_node(pro_id, **pro)
+
+			peg = result["peg"]
+			R.add_edge(pro_id, gene_id, **peg)
+
+
 	#How do I populate R from the query results?
-	R = nx.Graph()
 	return R
 	
 	
