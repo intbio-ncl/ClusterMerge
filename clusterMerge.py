@@ -58,8 +58,9 @@ def get_repodb_subgraph_given_genes(gene_ids):
     MATCH (gene:Gene {primaryDomainId:i})
 	OPTIONAL MATCH (gene)<-[peg:ProteinEncodedBy]-(pro:Protein)
 	OPTIONAL MATCH (pro)<-[dht:DrugHasTarget]-(drug)
+	OPTIONAL MATCH (drug)-[dsim:MoleculeSimilarityMolecule]-(drug)
 	OPTIONAL MATCH (gene)-[gawd:GeneAssociatedWithDisorder]-(disorder)
-    RETURN gene, peg, pro, drug, disorder, dht, gawd
+    RETURN gene, peg, pro, drug, disorder, dht, gawd, dsim
     """
 	
 	print (query)
@@ -114,6 +115,10 @@ def get_repodb_subgraph_given_genes(gene_ids):
 			gawd = result["gawd"]
 			if gawd:
 				R.add_edge(gene_id, disorder_id, **flatten(gawd))
+				
+			dsim = result["dsim"]
+			if dsim:
+				R.add_edge(drug_id, drug_id, **flatten(dsim))
 
 			dht = result["dht"]
 			if dht:
