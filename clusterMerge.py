@@ -20,14 +20,33 @@ import networkx as nx
 
 
 
-def get_repodb_subgraph_given_genes(gene_list):
-	R = nx.Graph()
-	repodb_ids = ["entrez.{}".format(i) for i in gene_ids]
+def get_repodb_subgraph_given_genes(gene_ids):
+	#Connect to RepotrialDB
+	connect_url = "bolt://repotrial.bioswarm.net:8687"
+	username = "neo4j"
+	password = "repodb"
+	driver = GraphDatabase.driver(connect_url, auth=(username, password))
 	
+	repodb_ids = ["entrez.{}".format(i) for i in gene_ids]
+	#Format the query string
+    query = """
+    UNWIND {repodb_ids} as i
+    MATCH {repodb_ids} as i
+    MATCH x (gene:Gene {primaryDoaminId: i})
+	""".format(repodb_ids)
+	
+	#Execute the query
+	with driver.session() as session:
+		for result in session.run(query, repodb_ids=repodb_ids):
+			print(result)
+	
+	#How do I populate R from the query results?
+	R = nx.Graph()
 	return R
 	
 	
 #Main
+
 if __name__ == "__main__"
 	#Read in a cluster exported from cytoscape as a graphml file to produce Graph P
 	print("reading Graph")
