@@ -56,8 +56,10 @@ def get_repodb_subgraph_given_genes(gene_ids):
 	query = """
     UNWIND {repodb_ids} as i
     MATCH (gene:Gene {primaryDomainId:i})
-	OPTIONAL MATCH (gene)<-[peg:ProteinEncodedBy]-(pro)
-    RETURN gene, peg, pro
+	OPTIONAL MATCH (gene)<-[peg:ProteinEncodedBy]-(pro:Protein)
+	OPTIONAL MATCH (pro)<-[dht:DrugHasTarget]-(drug)
+	OPTIONAL MATCH (gene)-[gawd:GeneAssociatedWithDisorder]-(disorder)
+    RETURN gene, peg, pro, drug, disorder, dht, gawd
     """
 	
 	print (query)
@@ -99,6 +101,24 @@ def get_repodb_subgraph_given_genes(gene_ids):
 			if peg:
 				R.add_edge(pro_id, gene_id, **flatten(peg))
 
+			drug = result["drug"]
+			if drug:
+				drug_id = drug['primaryDomainId']
+				R.add_node(drug_id, **flatten(drug))
+			
+			disorder = result["disorder"]
+			if disorder:
+				disorder_id = disorder["primaryDomainId"]
+				R.add_node(disorder_id, **flatten(disorder))
+			
+			gawd = result["gawd"]
+			if gawd:
+				R.add_edge(gene_id, disorder_id, **flatten(gawd))
+
+			dht = result["dht"]
+			if dht:
+				R.add_edge(drug_id, pro_id, **flatten(dht))
+
 	return R
 	
 	
@@ -125,9 +145,11 @@ if __name__ == "__main__":
 	for i, j, data in P.edges(data=True):
 		i_name = 'entrez.{}'.format( node_id_to_entrez[i])
 		j_name = 'entrez.{}'.format( node_id_to_entrez[j])
+		data.pop("SUID")
+		data.pop("selected")
+		data.pop("shared name")
+		data.pop("shared interaction")
 		data = {"".join(word.capitalize() for word in k.split(" ")):v for k,v in data.items()}
-		data.pop("Suid")
-		data.pop("Selected")
 		R.add_edge(i_name, j_name, **flatten(data), type="IsFunctionallyRelatedTo" )
 
 	# Changing labels.
@@ -146,10 +168,15 @@ if __name__ == "__main__":
 		# If the node is a Gene and it has a symbol, use the symbol.
 		elif data['type'] == "Gene":
 			graphics[node] = {"fill" : "#FFB6C1"}
-
 			if data.get("approvedSymbol") not in [None, "-"]:
 				labels[node] = data["approvedSymbol"]
-			
+		
+		elif data['type'] == "Disorder":
+			graphics[node] = {"fill" : "#FF7F00"}
+
+		elif data['type'] in ["BiotechDrug", "SmallMoleculeDrug"]:
+			graphics[node] = {"fill" : "#FFFFE0"}
+
 
 	# Set the labels.
 	nx.set_node_attributes(R, graphics, name="graphics")
