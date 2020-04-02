@@ -19,18 +19,40 @@ import networkx as nx
 #Write out the merged graph as a file
 
 
+
+def get_repodb_subgraph_given_genes(gene_list):
+	R = nx.Graph()
+	repodb_ids = ["entrez.{}".format(i) for i in gene_ids]
+	
+	return R
 	
 	
 #Main
+if __name__ == "__main__"
+	#Read in a cluster exported from cytoscape as a graphml file to produce Graph P
+	print("reading Graph")
+	P = nx.Graph()
+	P = nx.read_graphml('./cluster.graphml')
+	print("There are {} nodes in the graph".format(P.number_of_nodes()))
+	print("There are {} edges in the graph".format(P.number_of_edges()))
 
-#Read in a cluster exported from cytoscape as a graphml file to produce Graph P
-print("reading Graph")
-P = nx.Graph()
-P = nx.read_graphml('./cluster.graphml')
-print("There are {} nodes in the graph".format(P.number_of_nodes()))
-print("There are {} edges in the graph".format(P.number_of_edges()))
+	#Extract the gene IDs from the cluster as gene names in the gene list
+	gene_ids = [data["name"] for _, data in P.nodes (data=True)]
+	print (gene_ids])
 
-#Extract the gene IDs from the cluster as gene names in the gene list
-print(list(P.nodes))
+	#Query the repotrialDB to produce graphml Graph R
+	R = nx.Graph()
+	R = get_repodb_subgraph_given_genes(gene_list)
 
+
+
+#Old Code
+
+#print(list(P.nodes))
+#print()
+#for node, data in P.nodes(data=True):
+#	print(node, data)
+
+#for gene in nx.get_node_attributes(P,"ApprovedSymboles"):
+#	print (gene.values())
 
