@@ -175,7 +175,7 @@ if __name__ == "__main__":
 			graphics[node] = {"fill" : "#FF7F00"}
 
 		elif data['type'] in ["BiotechDrug", "SmallMoleculeDrug"]:
-			graphics[node] = {"fill" : "#FFFFE0"}
+			graphics[node] = {"fill" : "#00008B"}
 
 
 	# Set the labels.
