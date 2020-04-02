@@ -17,9 +17,6 @@ import networkx as nx
 	#Extract the disorders associated with a gene
 #Merge R and P on gene name
 #Write out the merged graph as a file
-
-
-
 def get_repodb_subgraph_given_genes(gene_ids):
 	#Connect to RepotrialDB
 	connect_url = "bolt://repotrial.bioswarm.net:8687"
@@ -28,8 +25,10 @@ def get_repodb_subgraph_given_genes(gene_ids):
 	driver = GraphDatabase.driver(connect_url, auth=(username, password))
 	
 	repodb_ids = ["entrez.{}".format(i) for i in gene_ids]
+	print("Repodb ids ",repodb_ids) 
+	
 	#Format the query string
-    query = """
+	query = """
     UNWIND {repodb_ids} as i
     MATCH {repodb_ids} as i
     MATCH x (gene:Gene {primaryDoaminId: i})
@@ -47,7 +46,7 @@ def get_repodb_subgraph_given_genes(gene_ids):
 	
 #Main
 
-if __name__ == "__main__"
+if __name__ == "__main__":
 	#Read in a cluster exported from cytoscape as a graphml file to produce Graph P
 	print("reading Graph")
 	P = nx.Graph()
@@ -57,11 +56,11 @@ if __name__ == "__main__"
 
 	#Extract the gene IDs from the cluster as gene names in the gene list
 	gene_ids = [data["name"] for _, data in P.nodes (data=True)]
-	print (gene_ids])
+	#print (gene_ids)
 
 	#Query the repotrialDB to produce graphml Graph R
 	R = nx.Graph()
-	R = get_repodb_subgraph_given_genes(gene_list)
+	R = get_repodb_subgraph_given_genes(gene_ids)
 
 
 
